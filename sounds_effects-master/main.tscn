@@ -128,7 +128,6 @@ toggle_mode = true
 text = "en"
 
 [node name="to_azure" type="HBoxContainer" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -171,7 +170,6 @@ text = "Google voices"
 valign = 1
 
 [node name="azure" type="Label" parent="."]
-visible = false
 modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
 margin_left = 439.596
 margin_top = 450.705

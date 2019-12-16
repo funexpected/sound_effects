@@ -1,0 +1,182 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+
+[node name="main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="bg" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.67451, 0.756863, 0.368627, 1 )
+
+[node name="main_lang" type="HBoxContainer" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 15.0
+margin_top = -36.0
+margin_right = -1.0
+margin_bottom = 36.0
+custom_constants/separation = 5
+
+[node name="en" type="Button" parent="main_lang"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="tr" type="Button" parent="main_lang"]
+margin_left = 77.0
+margin_right = 149.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="sv" type="Button" parent="main_lang"]
+margin_left = 154.0
+margin_right = 226.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ru" type="Button" parent="main_lang"]
+margin_left = 231.0
+margin_right = 303.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="pl" type="Button" parent="main_lang"]
+margin_left = 308.0
+margin_right = 380.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="nl" type="Button" parent="main_lang"]
+margin_left = 385.0
+margin_right = 457.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ko" type="Button" parent="main_lang"]
+margin_left = 462.0
+margin_right = 534.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ja" type="Button" parent="main_lang"]
+margin_left = 539.0
+margin_right = 611.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="it" type="Button" parent="main_lang"]
+margin_left = 616.0
+margin_right = 688.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="fr" type="Button" parent="main_lang"]
+margin_left = 693.0
+margin_right = 765.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="de" type="Button" parent="main_lang"]
+margin_left = 770.0
+margin_right = 842.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hant" type="Button" parent="main_lang"]
+margin_left = 847.0
+margin_right = 919.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hans" type="Button" parent="main_lang"]
+margin_left = 924.0
+margin_right = 996.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="to_azure" type="HBoxContainer" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -74.0
+margin_top = -72.0
+margin_right = 74.0
+
+[node name="pt_br" type="Button" parent="to_azure"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="es" type="Button" parent="to_azure"]
+margin_left = 76.0
+margin_right = 148.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hk" type="Button" parent="to_azure"]
+margin_left = 152.0
+margin_right = 224.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="google" type="Label" parent="."]
+modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
+margin_left = 18.4761
+margin_top = 187.237
+margin_right = 117.476
+margin_bottom = 221.237
+rect_scale = Vector2( 2, 2 )
+text = "Google voices"
+valign = 1
+
+[node name="azure" type="Label" parent="."]
+visible = false
+modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
+margin_left = 439.596
+margin_top = 450.705
+margin_right = 538.596
+margin_bottom = 484.705
+rect_scale = Vector2( 2, 2 )
+text = "Azure"
+valign = 1

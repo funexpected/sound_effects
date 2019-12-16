@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nl_final_01.wav-c54154e5f14ae6aca2045d03081024d3.sample"
+
+[deps]
+
+source_file="res://finals_wav/nl_final_01.wav"
+dest_files=[ "res://.import/nl_final_01.wav-c54154e5f14ae6aca2045d03081024d3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

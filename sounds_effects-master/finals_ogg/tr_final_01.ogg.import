@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tr_final_01.ogg-c24cc930b7d6f60a0005a6ccae6404f2.oggstr"
+
+[deps]
+
+source_file="res://finals_ogg/tr_final_01.ogg"
+dest_files=[ "res://.import/tr_final_01.ogg-c24cc930b7d6f60a0005a6ccae6404f2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

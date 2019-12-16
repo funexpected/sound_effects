@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cn_hans_final_01.wav-31169bedd3cd4412685135b5a589c174.sample"
+
+[deps]
+
+source_file="res://finals_wav/cn_hans_final_01.wav"
+dest_files=[ "res://.import/cn_hans_final_01.wav-31169bedd3cd4412685135b5a589c174.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

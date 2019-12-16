@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cn_hk_final_01.ogg-853d31776064214ed75d9fefcb315b5d.oggstr"
+
+[deps]
+
+source_file="res://finals_ogg/cn_hk_final_01.ogg"
+dest_files=[ "res://.import/cn_hk_final_01.ogg-853d31776064214ed75d9fefcb315b5d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

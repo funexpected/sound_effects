@@ -1,24 +1,223 @@
-[gd_resource type="AudioBusLayout" load_steps=4 format=2]
+[gd_resource type="AudioBusLayout" load_steps=34 format=2]
 
 [sub_resource type="AudioEffectPitchShift" id=1]
 resource_name = "PitchShift1"
 pitch_scale = 0.91
 
-[sub_resource type="AudioEffectReverb" id=2]
-resource_name = "Reverb"
-room_size = 0.7
-damping = 0.1
-hipass = 0.17
-wet = 0.04
-
-[sub_resource type="AudioEffectEQ10" id=3]
+[sub_resource type="AudioEffectEQ10" id=2]
 resource_name = "EQ10"
 band_db/31_hz = -60.0
 band_db/62_hz = -10.0
 band_db/125_hz = -10.0
 band_db/250_hz = -10.0
 band_db/500_hz = -10.0
-band_db/16000_hz = -38.8
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectReverb" id=3]
+resource_name = "Reverb"
+room_size = 0.7
+damping = 0.1
+hipass = 0.17
+wet = 0.04
+
+[sub_resource type="AudioEffectPitchShift" id=4]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=5]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=6]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=7]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=8]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectEQ10" id=9]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=10]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectEQ10" id=11]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=12]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectEQ10" id=13]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/8000_hz = -2.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=14]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectEQ10" id=15]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/8000_hz = -7.0
+band_db/16000_hz = -50.0
+
+[sub_resource type="AudioEffectEQ10" id=16]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -28.8
+band_db/125_hz = -24.5
+band_db/250_hz = -19.3
+band_db/500_hz = -15.0
+band_db/4000_hz = 2.0
+band_db/8000_hz = 12.0
+band_db/16000_hz = -10.0
+
+[sub_resource type="AudioEffectPitchShift" id=17]
+resource_name = "PitchShift"
+pitch_scale = 0.8
+
+[sub_resource type="AudioEffectPitchShift" id=18]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=19]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=20]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=21]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=22]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=23]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=24]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=25]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=26]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=27]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=28]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=29]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=30]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=31]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
+
+[sub_resource type="AudioEffectPitchShift" id=32]
+resource_name = "PitchShift"
+pitch_scale = 0.91
+
+[sub_resource type="AudioEffectEQ10" id=33]
+resource_name = "EQ10"
+band_db/31_hz = -60.0
+band_db/62_hz = -10.0
+band_db/125_hz = -10.0
+band_db/250_hz = -10.0
+band_db/500_hz = -10.0
+band_db/16000_hz = -39.0
 
 [resource]
 bus/1/name = "en"
@@ -39,87 +238,147 @@ bus/2/mute = false
 bus/2/bypass_fx = false
 bus/2/volume_db = 0.0
 bus/2/send = "Master"
+bus/2/effect/0/effect = SubResource( 18 )
+bus/2/effect/0/enabled = true
+bus/2/effect/1/effect = SubResource( 19 )
+bus/2/effect/1/enabled = true
 bus/3/name = "sv"
 bus/3/solo = false
 bus/3/mute = false
 bus/3/bypass_fx = false
 bus/3/volume_db = 0.0
 bus/3/send = "Master"
+bus/3/effect/0/effect = SubResource( 20 )
+bus/3/effect/0/enabled = true
+bus/3/effect/1/effect = SubResource( 21 )
+bus/3/effect/1/enabled = true
 bus/4/name = "ru"
 bus/4/solo = false
 bus/4/mute = false
 bus/4/bypass_fx = false
 bus/4/volume_db = 0.0
 bus/4/send = "Master"
+bus/4/effect/0/effect = SubResource( 22 )
+bus/4/effect/0/enabled = true
+bus/4/effect/1/effect = SubResource( 23 )
+bus/4/effect/1/enabled = true
 bus/5/name = "pl"
 bus/5/solo = false
 bus/5/mute = false
 bus/5/bypass_fx = false
 bus/5/volume_db = 0.0
 bus/5/send = "Master"
+bus/5/effect/0/effect = SubResource( 24 )
+bus/5/effect/0/enabled = true
+bus/5/effect/1/effect = SubResource( 25 )
+bus/5/effect/1/enabled = true
 bus/6/name = "nl"
 bus/6/solo = false
 bus/6/mute = false
 bus/6/bypass_fx = false
 bus/6/volume_db = 0.0
 bus/6/send = "Master"
+bus/6/effect/0/effect = SubResource( 26 )
+bus/6/effect/0/enabled = true
+bus/6/effect/1/effect = SubResource( 27 )
+bus/6/effect/1/enabled = true
 bus/7/name = "ko"
 bus/7/solo = false
 bus/7/mute = false
 bus/7/bypass_fx = false
 bus/7/volume_db = 0.0
 bus/7/send = "Master"
+bus/7/effect/0/effect = SubResource( 28 )
+bus/7/effect/0/enabled = true
+bus/7/effect/1/effect = SubResource( 29 )
+bus/7/effect/1/enabled = true
 bus/8/name = "ja"
 bus/8/solo = false
 bus/8/mute = false
 bus/8/bypass_fx = false
 bus/8/volume_db = 0.0
 bus/8/send = "Master"
+bus/8/effect/0/effect = SubResource( 30 )
+bus/8/effect/0/enabled = true
+bus/8/effect/1/effect = SubResource( 31 )
+bus/8/effect/1/enabled = true
 bus/9/name = "it"
 bus/9/solo = false
 bus/9/mute = false
 bus/9/bypass_fx = false
 bus/9/volume_db = 0.0
 bus/9/send = "Master"
+bus/9/effect/0/effect = SubResource( 32 )
+bus/9/effect/0/enabled = true
+bus/9/effect/1/effect = SubResource( 33 )
+bus/9/effect/1/enabled = true
 bus/10/name = "fr"
 bus/10/solo = false
 bus/10/mute = false
 bus/10/bypass_fx = false
 bus/10/volume_db = 0.0
 bus/10/send = "Master"
+bus/10/effect/0/effect = SubResource( 4 )
+bus/10/effect/0/enabled = true
+bus/10/effect/1/effect = SubResource( 5 )
+bus/10/effect/1/enabled = true
 bus/11/name = "de"
 bus/11/solo = false
 bus/11/mute = false
 bus/11/bypass_fx = false
 bus/11/volume_db = 0.0
 bus/11/send = "Master"
+bus/11/effect/0/effect = SubResource( 6 )
+bus/11/effect/0/enabled = true
+bus/11/effect/1/effect = SubResource( 7 )
+bus/11/effect/1/enabled = true
 bus/12/name = "cn_hant"
 bus/12/solo = false
 bus/12/mute = false
 bus/12/bypass_fx = false
 bus/12/volume_db = 0.0
 bus/12/send = "Master"
+bus/12/effect/0/effect = SubResource( 8 )
+bus/12/effect/0/enabled = true
+bus/12/effect/1/effect = SubResource( 9 )
+bus/12/effect/1/enabled = true
 bus/13/name = "cn_hans"
 bus/13/solo = false
 bus/13/mute = false
 bus/13/bypass_fx = false
 bus/13/volume_db = 0.0
 bus/13/send = "Master"
+bus/13/effect/0/effect = SubResource( 10 )
+bus/13/effect/0/enabled = true
+bus/13/effect/1/effect = SubResource( 11 )
+bus/13/effect/1/enabled = true
 bus/14/name = "pt_br"
 bus/14/solo = false
 bus/14/mute = false
 bus/14/bypass_fx = false
 bus/14/volume_db = 0.0
 bus/14/send = "Master"
+bus/14/effect/0/effect = SubResource( 12 )
+bus/14/effect/0/enabled = true
+bus/14/effect/1/effect = SubResource( 13 )
+bus/14/effect/1/enabled = true
 bus/15/name = "es"
 bus/15/solo = false
 bus/15/mute = false
 bus/15/bypass_fx = false
 bus/15/volume_db = 0.0
 bus/15/send = "Master"
+bus/15/effect/0/effect = SubResource( 14 )
+bus/15/effect/0/enabled = true
+bus/15/effect/1/effect = SubResource( 15 )
+bus/15/effect/1/enabled = true
 bus/16/name = "cn_hk"
 bus/16/solo = false
 bus/16/mute = false
 bus/16/bypass_fx = false
 bus/16/volume_db = 0.0
 bus/16/send = "Master"
+bus/16/effect/0/effect = SubResource( 16 )
+bus/16/effect/0/enabled = true
+bus/16/effect/1/effect = SubResource( 17 )
+bus/16/effect/1/enabled = true

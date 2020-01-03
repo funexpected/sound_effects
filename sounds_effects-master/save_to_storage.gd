@@ -1,5 +1,6 @@
 extends Reference
-var file_name = "settings.json"
+var file_name = "settings/%s.json"
+var file_name_all_lang = "settings.json"
 
 func _ready():
 	print("here")
@@ -50,14 +51,17 @@ func prepare_data(settings):
 		i+=1
 	print("stop_cycle")
 	return settings
-	
+
 func save_settings(settings):
 	var to_file = prepare_data(settings)
+	for lang in to_file:
+		var fd = File.new()
+		if fd.open(file_name % lang, File.WRITE) == OK:
+			fd.store_string(JSON.print(to_file[lang], "  "))
+			fd.close()
 	var fd = File.new()
-	
-	if fd.open(file_name, File.WRITE) == OK:
+	if fd.open(file_name_all_lang, File.WRITE) == OK:
 		fd.store_string(JSON.print(to_file, "  "))
-
 		fd.close()
 #	var s1 = "ab/"
 #	var s2 = "Ab/"

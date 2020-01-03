@@ -1,0 +1,27 @@
+{
+  "AudioEffectEQ10": {
+    "band_db/31_hz": -60,
+    "band_db/62_hz": -30,
+    "band_db/125_hz": -5,
+    "band_db/250_hz": -5,
+    "band_db/500_hz": 0,
+    "band_db/1000_hz": 0,
+    "band_db/2000_hz": 0,
+    "band_db/4000_hz": 0,
+    "band_db/8000_hz": 0,
+    "band_db/16000_hz": -60
+  },
+  "AudioEffectPitchShift": {
+    "pitch_scale": 0.75
+  },
+  "AudioEffectReverb": {
+    "predelay_msec": 150,
+    "predelay_feedback": 0.4,
+    "room_size": 0.85,
+    "damping": 0.8,
+    "spread": 1,
+    "hipass": 0.17,
+    "dry": 1,
+    "wet": 0.08
+  }
+}

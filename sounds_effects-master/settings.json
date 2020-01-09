@@ -1,0 +1,410 @@
+{
+  "en": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "tr": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -30,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "sv": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.72
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "ru": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.85
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "pl": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "nl": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "ko": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.89
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "ja": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "it": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.85
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "fr": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.87
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "de": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.84
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -10,
+      "band_db/125_hz": -10,
+      "band_db/250_hz": -10,
+      "band_db/500_hz": -10,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "cn_hant": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.91
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "cn_hans": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.91
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "pt_br": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.7
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": -2,
+      "band_db/16000_hz": -39
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "es": {
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.8
+    },
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": -7,
+      "band_db/16000_hz": -50
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  },
+  "cn_hk": {
+    "AudioEffectEQ10": {
+      "band_db/31_hz": -60,
+      "band_db/62_hz": -30,
+      "band_db/125_hz": -5,
+      "band_db/250_hz": -5,
+      "band_db/500_hz": 0,
+      "band_db/1000_hz": 0,
+      "band_db/2000_hz": 0,
+      "band_db/4000_hz": 0,
+      "band_db/8000_hz": 0,
+      "band_db/16000_hz": -60
+    },
+    "AudioEffectPitchShift": {
+      "pitch_scale": 0.75
+    },
+    "AudioEffectReverb": {
+      "predelay_msec": 150,
+      "predelay_feedback": 0.4,
+      "room_size": 0.85,
+      "damping": 0.8,
+      "spread": 1,
+      "hipass": 0.17,
+      "dry": 1,
+      "wet": 0.08
+    }
+  }
+}

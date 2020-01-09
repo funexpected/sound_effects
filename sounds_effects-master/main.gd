@@ -4,7 +4,26 @@ onready var to_azure = $to_azure
 var path = "res://finals_ogg/%s_final_01.ogg"
 onready var audio_pl = get_node("AudioStreamPlayer")
 onready var sounds = {}
+onready var save = get_node("save")
 
+onready var Storage = preload("res://save_to_storage.gd").new()
+var settings  = {
+}
+#{
+#	"en" : 
+#		{
+#			"soundef_1" : 
+#				{
+#					"par_1" : 0,
+#					"par_2" :0,
+#				},
+#			"soundef_2" :
+#				{ 
+#					"par_1" : 0,
+#					"par_2" :0,
+#				},
+#		}
+#}
 func _ready():
 #	print(AudioServer.get_bus_count())
 #	print(AudioServer.get_device_list())
@@ -18,6 +37,8 @@ func _ready():
 #	else:
 #		print("not")
 	set_buses()
+	save.connect("pressed", Storage, "save_settings", [settings])
+	
 	for el in main_lang.get_children():
 		el.text = el.name
 		sounds[el.name] = load(path % el.name)
@@ -27,7 +48,6 @@ func _ready():
 		sounds[k.name] = load(path % k.name)
 		k.connect("button_down", self, "play_sound", [k.name, k])
 	get_node("AudioStreamPlayer").play()
-	pass 
 
 func set_buses():
 	#0 is master bus
@@ -37,29 +57,29 @@ func set_buses():
 	var buses = AudioServer.get_bus_count()
 	
 	while i < buses:
-		var name = AudioServer.get_bus_name(i)
-		if name != 'en':
+		var _name = AudioServer.get_bus_name(i)
+		if _name != 'en':
 			var nb = AudioServer.get_bus_effect_count(i)
 			var k = 0
 			while k < nb:
 				var eff = AudioServer.get_bus_effect(i, k)
 				if eff.get_property_list()[7]["name"] == example_effect.get_property_list()[7]["name"]:
-					print("I already have reverb effect")
+#					print("I already have reverb effect")
 					break
 				k += 1
 			if k == nb:
 				AudioServer.add_bus_effect(i, example_effect.duplicate(), k)
-				print("add effect to bus ", AudioServer.get_bus_name(i))
+#				print("add effect to bus ", AudioServer.get_bus_name(i))
 		i += 1
 	check_added_sounds()
 	
 func check_added_sounds():
 	var i = int(1)
 	while i < AudioServer.get_bus_count():
-		var name =  AudioServer.get_bus_name(i)
+		var _name =  AudioServer.get_bus_name(i)
 		var nb = AudioServer.get_bus_effect_count(i)
 		var l = int(0)
-		print(name)
+		print(_name)
 		while l < AudioServer.get_bus_effect_count(i):
 			print(AudioServer.get_bus_effect(i, l))
 			l+=1
@@ -100,3 +120,27 @@ func unpressed_btn():
 	for el in to_azure.get_children():
 		if el.pressed == true:
 			el.pressed = false
+			
+
+#{
+#	"en" : 
+#		{
+#			"soundef_1" : 
+#				{
+#					"par_1" : 0,
+#					"par_2" :0,
+#				},
+#			"soundef_2" :
+#				{ 
+#					"par_1" : 0,
+#					"par_2" :0,
+#				},
+#		}
+#}
+
+
+
+
+
+	
+	

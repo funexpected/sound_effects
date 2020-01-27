@@ -2,6 +2,9 @@ extends Reference
 var file_name = "settings/%s.json"
 var file_name_all_lang = "settings.json"
 
+signal error(text)
+signal ok(text)
+
 func _ready():
 	print("here")
 	pass 
@@ -52,17 +55,28 @@ func prepare_data(settings):
 	print("stop_cycle")
 	return settings
 
-func save_settings(settings):
+func save_settings(settings, file_name):
+	var full_name = "res://voice_profiles/%s"%file_name
+	if file_name == "":
+		emit_signal("error", "error, no file name")
+		return
 	var to_file = prepare_data(settings)
-	for lang in to_file:
-		var fd = File.new()
-		if fd.open(file_name % lang, File.WRITE) == OK:
-			fd.store_string(JSON.print(to_file[lang], "  "))
-			fd.close()
+#	for lang in to_file:
+#		var fd = File.new()
+#		if fd.open(file_name % lang, File.WRITE) == OK:
+#			fd.store_string(JSON.print(to_file[lang], "  "))
+#			fd.close()
+
 	var fd = File.new()
 	if fd.open(file_name_all_lang, File.WRITE) == OK:
 		fd.store_string(JSON.print(to_file, "  "))
 		fd.close()
+		emit_signal("ok", "saved as %s"%file_name)
+	
+	if fd.open(full_name, File.WRITE) == OK:
+		fd.store_string(JSON.print(to_file, "  "))
+		fd.close()
+		emit_signal("ok", "saved as %s"%file_name)
 #	var s1 = "ab/"
 #	var s2 = "Ab/"
 #	print(does_consist_upper_case(s1))

@@ -1,0 +1,167 @@
+[gd_scene format=2]
+
+[node name="set" type="VBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 100
+
+[node name="google" type="Label" parent="."]
+self_modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
+margin_right = 90.0
+margin_bottom = 14.0
+text = "Google voices"
+valign = 1
+
+[node name="main_lang" type="HBoxContainer" parent="google"]
+editor/display_folded = true
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 21.3815
+margin_right = 895.262
+margin_bottom = 93.3815
+custom_constants/separation = 5
+
+[node name="en" type="Button" parent="google/main_lang"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="tr" type="Button" parent="google/main_lang"]
+margin_left = 77.0
+margin_right = 149.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="sv" type="Button" parent="google/main_lang"]
+margin_left = 154.0
+margin_right = 226.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ru" type="Button" parent="google/main_lang"]
+margin_left = 231.0
+margin_right = 303.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="pl" type="Button" parent="google/main_lang"]
+margin_left = 308.0
+margin_right = 380.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="nl" type="Button" parent="google/main_lang"]
+margin_left = 385.0
+margin_right = 457.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ko" type="Button" parent="google/main_lang"]
+margin_left = 462.0
+margin_right = 534.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="ja" type="Button" parent="google/main_lang"]
+margin_left = 539.0
+margin_right = 611.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="it" type="Button" parent="google/main_lang"]
+margin_left = 616.0
+margin_right = 688.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="fr" type="Button" parent="google/main_lang"]
+margin_left = 693.0
+margin_right = 765.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="de" type="Button" parent="google/main_lang"]
+margin_left = 770.0
+margin_right = 842.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hant" type="Button" parent="google/main_lang"]
+margin_left = 847.0
+margin_right = 919.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hans" type="Button" parent="google/main_lang"]
+margin_left = 924.0
+margin_right = 996.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="azure" type="Label" parent="."]
+self_modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
+margin_top = 114.0
+margin_right = 90.0
+margin_bottom = 128.0
+text = "Azure"
+valign = 1
+
+[node name="to_azure" type="HBoxContainer" parent="azure"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -45.0
+margin_top = 4.648
+margin_right = 179.0
+margin_bottom = 76.648
+
+[node name="pt_br" type="Button" parent="azure/to_azure"]
+margin_right = 72.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="es" type="Button" parent="azure/to_azure"]
+margin_left = 76.0
+margin_right = 148.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"
+
+[node name="cn_hk" type="Button" parent="azure/to_azure"]
+margin_left = 152.0
+margin_right = 224.0
+margin_bottom = 72.0
+rect_min_size = Vector2( 72, 72 )
+toggle_mode = true
+text = "en"

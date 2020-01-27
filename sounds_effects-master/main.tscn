@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://lang_buttons.tscn" type="PackedScene" id=2]
 
 [node name="main" type="Control"]
 anchor_right = 1.0
@@ -14,178 +15,87 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.67451, 0.756863, 0.368627, 1 )
 
-[node name="main_lang" type="HBoxContainer" parent="."]
-editor/display_folded = true
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_left = 15.0
-margin_top = -36.0
-margin_right = -1.0
-margin_bottom = 36.0
-custom_constants/separation = 5
+[node name="main_net" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 100
 
-[node name="en" type="Button" parent="main_lang"]
-margin_right = 72.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
+[node name="set" parent="main_net" instance=ExtResource( 2 )]
+margin_right = 90.0
+margin_bottom = 128.0
+size_flags_horizontal = 0
 
-[node name="tr" type="Button" parent="main_lang"]
-margin_left = 77.0
-margin_right = 149.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
+[node name="save" type="HBoxContainer" parent="main_net"]
+margin_top = 228.0
+margin_right = 760.0
+margin_bottom = 278.0
+custom_constants/separation = 20
 
-[node name="sv" type="Button" parent="main_lang"]
-margin_left = 154.0
-margin_right = 226.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="ru" type="Button" parent="main_lang"]
-margin_left = 231.0
-margin_right = 303.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="pl" type="Button" parent="main_lang"]
-margin_left = 308.0
-margin_right = 380.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="nl" type="Button" parent="main_lang"]
-margin_left = 385.0
-margin_right = 457.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="ko" type="Button" parent="main_lang"]
-margin_left = 462.0
-margin_right = 534.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="ja" type="Button" parent="main_lang"]
-margin_left = 539.0
-margin_right = 611.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="it" type="Button" parent="main_lang"]
-margin_left = 616.0
-margin_right = 688.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="fr" type="Button" parent="main_lang"]
-margin_left = 693.0
-margin_right = 765.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="de" type="Button" parent="main_lang"]
-margin_left = 770.0
-margin_right = 842.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="cn_hant" type="Button" parent="main_lang"]
-margin_left = 847.0
-margin_right = 919.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="cn_hans" type="Button" parent="main_lang"]
-margin_left = 924.0
-margin_right = 996.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="to_azure" type="HBoxContainer" parent="."]
-editor/display_folded = true
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-margin_left = -74.0
-margin_top = -72.0
-margin_right = 74.0
-
-[node name="pt_br" type="Button" parent="to_azure"]
-margin_right = 72.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="es" type="Button" parent="to_azure"]
-margin_left = 76.0
-margin_right = 148.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="cn_hk" type="Button" parent="to_azure"]
-margin_left = 152.0
-margin_right = 224.0
-margin_bottom = 72.0
-rect_min_size = Vector2( 72, 72 )
-toggle_mode = true
-text = "en"
-
-[node name="google" type="Label" parent="."]
-modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
-margin_left = 18.4761
-margin_top = 187.237
-margin_right = 117.476
-margin_bottom = 221.237
-rect_scale = Vector2( 2, 2 )
-text = "Google voices"
-valign = 1
-
-[node name="azure" type="Label" parent="."]
-modulate = Color( 0.0392157, 0.0588235, 0.752941, 1 )
-margin_left = 439.596
-margin_top = 450.705
-margin_right = 538.596
-margin_bottom = 484.705
-rect_scale = Vector2( 2, 2 )
-text = "Azure"
-valign = 1
-
-[node name="save" type="Button" parent="."]
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -158.0
-margin_top = -95.0
+[node name="save" type="Button" parent="main_net/save"]
+margin_right = 100.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 100, 50 )
+size_flags_horizontal = 2
 text = "save settings"
+
+[node name="save_as" type="TextEdit" parent="main_net/save"]
+margin_left = 560.0
+margin_right = 760.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 0 )
+size_flags_horizontal = 0
+
+[node name="error" type="Label" parent="main_net/save"]
+visible = false
+self_modulate = Color( 0.670588, 0.0588235, 0.0588235, 1 )
+margin_left = 500.0
+margin_right = 760.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 50 )
+size_flags_horizontal = 3
+text = "error"
+
+[node name="ok" type="Label" parent="main_net/save"]
+visible = false
+self_modulate = Color( 0.0784314, 0.552941, 0.0431373, 1 )
+margin_left = 560.0
+margin_right = 760.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 50 )
+size_flags_horizontal = 3
+
+[node name="compare" type="VBoxContainer" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_right = 119.0
+margin_bottom = 78.0
+custom_constants/separation = 20
+
+[node name="compare" type="HBoxContainer" parent="compare"]
+margin_right = 781.0
+margin_bottom = 24.0
+
+[node name="compare" type="CheckBox" parent="compare/compare"]
+self_modulate = Color( 0.921569, 0.0784314, 0.0784314, 1 )
+margin_right = 242.0
+margin_bottom = 24.0
+text = "compare with setiings_file.json=>"
+
+[node name="file_name" type="TextEdit" parent="compare/compare"]
+margin_left = 246.0
+margin_right = 746.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 500, 24 )
+
+[node name="error" type="Label" parent="compare/compare"]
+visible = false
+self_modulate = Color( 0.72549, 0.0980392, 0.0980392, 1 )
+margin_left = 750.0
+margin_top = 5.0
+margin_right = 750.0
+margin_bottom = 19.0
+
+[node name="set" parent="compare" instance=ExtResource( 2 )]
+margin_top = 44.0
+margin_right = 781.0
+margin_bottom = 172.0

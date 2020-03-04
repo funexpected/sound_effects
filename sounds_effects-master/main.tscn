@@ -124,6 +124,7 @@ margin_left = -208.0
 margin_top = -134.5
 margin_right = 208.0
 margin_bottom = 134.5
+rect_min_size = Vector2( 400, 140 )
 popup_exclusive = true
 window_title = "Open a File"
 mode = 0

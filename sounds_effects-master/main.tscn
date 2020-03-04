@@ -27,23 +27,19 @@ size_flags_horizontal = 0
 
 [node name="save" type="HBoxContainer" parent="main_net"]
 margin_top = 228.0
-margin_right = 760.0
+margin_right = 100.0
 margin_bottom = 278.0
+size_flags_horizontal = 2
 custom_constants/separation = 20
 
 [node name="save" type="Button" parent="main_net/save"]
+self_modulate = Color( 0.0784314, 0.403922, 0.921569, 1 )
 margin_right = 100.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 2
+toggle_mode = true
 text = "save settings"
-
-[node name="save_as" type="TextEdit" parent="main_net/save"]
-margin_left = 560.0
-margin_right = 760.0
-margin_bottom = 50.0
-rect_min_size = Vector2( 200, 0 )
-size_flags_horizontal = 0
 
 [node name="error" type="Label" parent="main_net/save"]
 visible = false
@@ -69,33 +65,70 @@ anchor_top = 0.5
 anchor_bottom = 0.5
 margin_right = 119.0
 margin_bottom = 78.0
-custom_constants/separation = 20
+custom_constants/separation = 30
 
 [node name="compare" type="HBoxContainer" parent="compare"]
-margin_right = 781.0
-margin_bottom = 24.0
+margin_right = 119.0
+margin_bottom = 40.0
 
-[node name="compare" type="CheckBox" parent="compare/compare"]
-self_modulate = Color( 0.921569, 0.0784314, 0.0784314, 1 )
-margin_right = 242.0
-margin_bottom = 24.0
-text = "compare with setiings_file.json=>"
-
-[node name="file_name" type="TextEdit" parent="compare/compare"]
-margin_left = 246.0
-margin_right = 746.0
-margin_bottom = 24.0
-rect_min_size = Vector2( 500, 24 )
+[node name="compare" type="Button" parent="compare/compare"]
+self_modulate = Color( 0.0784314, 0.403922, 0.921569, 1 )
+margin_right = 68.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 68, 40 )
+toggle_mode = true
+text = "compare"
 
 [node name="error" type="Label" parent="compare/compare"]
 visible = false
 self_modulate = Color( 0.72549, 0.0980392, 0.0980392, 1 )
-margin_left = 750.0
-margin_top = 5.0
-margin_right = 750.0
-margin_bottom = 19.0
+margin_left = 230.0
+margin_top = 3.0
+margin_right = 230.0
+margin_bottom = 17.0
 
 [node name="set" parent="compare" instance=ExtResource( 2 )]
-margin_top = 44.0
-margin_right = 781.0
-margin_bottom = 172.0
+margin_top = 70.0
+margin_right = 119.0
+margin_bottom = 198.0
+
+[node name="block" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 0.360784, 0.741176, 0.733333, 0.592157 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="save_file" type="FileDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -208.0
+margin_top = -134.5
+margin_right = 208.0
+margin_bottom = 134.5
+rect_min_size = Vector2( 416, 209 )
+popup_exclusive = true
+filters = PoolStringArray( "*.json; JSON" )
+show_hidden_files = true
+current_dir = "res://voice_profiles"
+current_file = "dragon.json"
+current_path = "res://voice_profiles/dragon.json"
+
+[node name="open_file" type="FileDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -208.0
+margin_top = -134.5
+margin_right = 208.0
+margin_bottom = 134.5
+popup_exclusive = true
+window_title = "Open a File"
+mode = 0
+filters = PoolStringArray( "*.json;JSON" )
+show_hidden_files = true
+current_dir = "res://voice_profiles"
+current_file = "dragon.json"
+current_path = "res://voice_profiles/dragon.json"

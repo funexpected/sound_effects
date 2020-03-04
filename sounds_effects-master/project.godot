@@ -19,6 +19,10 @@ config/name="sounds_effects"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Sound="*res://sound_effects.gd"
+
 [display]
 
 window/dpi/allow_hidpi=true

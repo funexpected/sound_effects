@@ -1,12 +1,11 @@
 extends Reference
-var file_name = "settings/%s.json"
+# var file_name = "settings/%s.json"
 var file_name_all_lang = "settings.json"
 
 signal error(text)
 signal ok(text)
 
 func _ready():
-	print("here")
 	pass 
 
 func does_consist_upper_case(_str):
@@ -56,7 +55,7 @@ func prepare_data(settings):
 	return settings
 
 func save_settings(settings, file_name):
-	var full_name = "res://voice_profiles/%s"%file_name
+	var full_name = file_name
 	if file_name == "":
 		emit_signal("error", "error, no file name")
 		return

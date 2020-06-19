@@ -112,8 +112,7 @@ popup_exclusive = true
 filters = PoolStringArray( "*.json; JSON" )
 show_hidden_files = true
 current_dir = "res://voice_profiles"
-current_file = "dragon.json"
-current_path = "res://voice_profiles/dragon.json"
+current_path = "res://voice_profiles/"
 
 [node name="open_file" type="FileDialog" parent="."]
 anchor_left = 0.5
@@ -131,5 +130,4 @@ mode = 0
 filters = PoolStringArray( "*.json;JSON" )
 show_hidden_files = true
 current_dir = "res://voice_profiles"
-current_file = "dragon.json"
-current_path = "res://voice_profiles/dragon.json"
+current_path = "res://voice_profiles/"

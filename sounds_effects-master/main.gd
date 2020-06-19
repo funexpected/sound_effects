@@ -81,6 +81,7 @@ func hide_block(who_emit):
 func save_settings():
 	block.show()
 	save_file.show()
+	save_file.set_current_dir("res://voice_profiles")
 
 func init_save(file_name):
 	Storage.save_settings(settings, file_name)
@@ -91,6 +92,7 @@ func get_compare():
 	if compare.pressed:
 		block.show()
 		open_file.show()
+		open_file.set_current_dir("res://voice_profiles")
 	if !compare.pressed:
 		block.hide()
 		compare_buttons.visible = false

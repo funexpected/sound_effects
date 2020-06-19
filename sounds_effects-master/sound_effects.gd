@@ -57,12 +57,17 @@ func create_bus(settings, lang):
 		print("ef->", ef)
 		AudioServer.add_bus_effect(our_bus, new_eff(ef, settings[lang][ef]), -1)
 
+#add button for duplicate reverb
 #in busses make duplicate reverberation from en bus if bus does not have own reverb. If bus has reverb, system uses its reverb.
 func set_buses():
 	#0 is master bus
 	var i = int(1)
+	var example_effect = null
 	var bus_example = AudioServer.get_bus_index("en")
-	var example_effect = AudioServer.get_bus_effect(bus_example, 2).duplicate()
+	var pr = AudioServer.is_bus_effect_enabled(bus_example, 2)
+	print("enabled", pr)
+	if  AudioServer.is_bus_effect_enabled(bus_example, 2):
+		example_effect = AudioServer.get_bus_effect(bus_example, 2).duplicate()
 	var buses = AudioServer.get_bus_count()-1
 	
 	while i < buses:
@@ -72,11 +77,11 @@ func set_buses():
 			var k = 0
 			while k < nb:
 				var eff = AudioServer.get_bus_effect(i, k)
-				if eff.get_property_list()[7]["name"] == example_effect.get_property_list()[7]["name"]:
+				if example_effect && eff.get_property_list()[7]["name"] == example_effect.get_property_list()[7]["name"]:
 #					print("I already have reverb effect")
 					break
 				k += 1
-			if k == nb:
+			if k == nb && example_effect:
 				AudioServer.add_bus_effect(i, example_effect.duplicate(), k)
 #				print("add effect to bus ", AudioServer.get_bus_name(i))
 		i += 1
